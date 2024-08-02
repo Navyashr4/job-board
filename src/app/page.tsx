@@ -61,6 +61,7 @@ export default async function Home({
         <JobFilterSidebar defaultValues={filterValues} />
         <JobResults
           filterValues={filterValues}
+          page={page ? parseInt(page) : undefined}
         />
       </section>
     </main>

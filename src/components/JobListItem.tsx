@@ -23,7 +23,6 @@ export default function JobListItem({
 }: JobListItemProps) {
   return (
     <article className="flex gap-3 rounded-lg border p-5 hover:bg-muted/60">
-      {/**Image */}
       <Image
         src={companyLogoUrl || companyLogoPlaceholder}
         alt={`${companyName} logo`}
@@ -31,7 +30,6 @@ export default function JobListItem({
         height={100}
         className="self-center rounded-lg"
       />
-      {/** Job details */}
       <div className="flex-grow space-y-3">
         <div>
           <h2 className="text-xl font-medium">{title}</h2>
@@ -60,7 +58,6 @@ export default function JobListItem({
           </p>
         </div>
       </div>
-      {/** Badges */}
       <div className="hidden shrink-0 flex-col items-end justify-between sm:flex">
         <Badge>{type}</Badge>
         <span className="flex items-center gap-1.5 text-muted-foreground">
