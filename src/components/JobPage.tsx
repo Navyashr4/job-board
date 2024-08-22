@@ -42,6 +42,7 @@ export default function JobPage({
                 <Link
                   href={new URL(applicationUrl).origin}
                   className="text-green-500 hover:underline"
+                  target="_blank"
                 >
                   {companyName}
                 </Link>
